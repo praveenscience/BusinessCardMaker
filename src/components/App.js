@@ -28,7 +28,7 @@ const App = () => {
       <Header Dark={true}>Professional Card Maker</Header>
       <main>
         <Form Values={Values} onChange={handleChange} />
-        <Preview />
+        <Preview Values={Values} />
       </main>
     </div>
   );
