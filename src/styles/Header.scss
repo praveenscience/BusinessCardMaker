@@ -1,0 +1,11 @@
+.Header {
+  background-color: #f5f5f5;
+  h1 {
+    padding: 10px;
+    text-align: center;
+  }
+  &.Dark {
+    background-color: #333;
+    color: #fff;
+  }
+}
