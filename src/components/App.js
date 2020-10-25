@@ -14,11 +14,20 @@ const App = () => {
     Phone,
     Email
   };
+  const handleChange = e => {
+    const setField = {
+      setName,
+      setDesignation,
+      setPhone,
+      setEmail
+    };
+    setField["set" + e.target.name](e.target.value);
+  };
   return (
     <div className="App">
       <Header Dark={true}>Professional Card Maker</Header>
       <main>
-        <Form Values={Values} />
+        <Form Values={Values} onChange={handleChange} />
         <Preview />
       </main>
     </div>
